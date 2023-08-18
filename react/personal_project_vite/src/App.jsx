@@ -6,6 +6,7 @@ import { api } from "./utilities";
 
 export const userContext = createContext();
   const token = localStorage.token
+  api.defaults.headers.common["Authorization"] = `Token ${token}`;
 
   function App() {
     const [user, setUser] = useState(null);

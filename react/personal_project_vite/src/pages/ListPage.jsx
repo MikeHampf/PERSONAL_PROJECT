@@ -62,7 +62,7 @@ export function ListPage() {
                         <li>LOSE IT</li>
                     </div>
                     <div>
-                        <li>- - - - - - - - -</li>
+                        <li>{"<><><><><><><><><><>"}</li>
                     </div>
                     {list.listings.map((item, index) => (
                         <div key={index} className="listing">
@@ -70,7 +70,6 @@ export function ListPage() {
                             <li>{item.entry.work}</li>
                             <li id={`composer${index}`}>{item.entry.composer}</li>
                             <button onClick={(event) => {gotoDetails(item.entry.composer)
-                                                        //setDetails(item.entry.composer)
                                                         }}>details</button>
                             <button onClick={(event) =>{setId(item.id)
                                                         removeListing(item.id)}}>remove</button>

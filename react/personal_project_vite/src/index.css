@@ -35,6 +35,19 @@ a {
   margin: 10%
 }
 
+.page_sub_title{
+  border: 2px solid #00ff00;
+  border-radius: 20px;
+  margin: 5%;
+  padding: 5px;
+}
+
+.thumbnail{
+  border-radius: 10px;
+  width: 75px;
+  height: 75px;
+}
+
 img{
   border-radius: 25%;
   width: 300px;
@@ -63,7 +76,9 @@ li {
 .listing{
   display: flex;
   justify-content: space-around;
-  margin: 5px;
+  margin: 10px;
+  border-top: 1px dashed rgb(162, 48, 162);
+  padding-top: 10px;
 }
 
 a {

@@ -11,6 +11,11 @@ export function SuggestionsPage(){
     const backToList = () => {
         navigate("../list")
     }
+
+    function gotoDetails(composer){
+        console.log(composer)
+        navigate("../details/", {state: composer})
+    }
     
     const [composers, setComposers] = useState([])
     const era = location.state
@@ -47,10 +52,10 @@ export function SuggestionsPage(){
                         <ul>
                             {composersList.map((composer, index) => (
                                 <div key={index} className="listing">
-                                <li>work</li>
+                                <img className="thumbnail" src={composer.portrait} />
                                 <li>{composer.name}</li>
-                                <button>details</button>
-                                <button>ADD TO LIST!</button>
+                                <button onClick={(event) => {gotoDetails(composer.name)
+                                                        }}>details</button>
                                 </div>
                             ))}
                         </ul>

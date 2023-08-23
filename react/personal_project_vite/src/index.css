@@ -5,7 +5,8 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242432;
+  /* background-color: #242432; */
+  background-image: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxANEA0NDQ8ODQ0NDw4NDQ0NDg8NDQ0NFREWFhURFRUYHSggGBolGxUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKBQUFDgUFDisZExkrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAOEA4QMBIgACEQEDEQH/xAAaAAEBAQEBAQEAAAAAAAAAAAAAAQMCBAUH/8QAKxAAAgAEBQUBAQEBAAMBAAAAAAECAzFxERNRgZEEEiFBYRSxMqHB0fCS/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/APy786J+dF/OT86AfnRPzov50T86AfnI+nRfzomQBlNgSxS3M+podzYEsUuTPqKAOopsOopsOopsOopsBOopsJ9Nh1FNhPpsBJ9NhOpsJ1NhOpsBtDJ8KyLkkUrwrIZIDJGSMkmUAySZJXJJlAcRwKhxMorHccKRnMpsAjorIkdFZfwsdFZEjorL+AIv8qyEdFZfwkX+VZfwR0VgEX+VZEi/yrIsVFZEiorIDEAAfafTj84/OT84D84/OMgn5wH50HIGQTIAymwJYpGfU0NJsCWKRn1FAE+mxOopsOopsJ9NgE+mxJ9NhPpsJ1NgE6mwnU2E6mxJ1NgN4ZPhWQySQyfCsi5IEyRkjKGUBMoZIyhlAcRwpGcymx3HCkcTKbASOisv4IqKyEdFZEiorL+AIv8AKsv4IqKwi/yrIRUVgEVFZEiorIsVFZEiorIDEAAfa/OT84/OMgCZAyBkXGQBMgZAyBkAZTYEsUjPqKHc2DDFI46igE6imwn02HUU2E+mwEn02E+mwn02JPpsAnU2E6mwnU2E6mwG0MnwrIZIhleFZDKAZRMouSTKAZRMoZQygOI4cDiZTY7jhwM5lNgEdFZEj/yrL+FjorL+EjorAIqKyEVFYRUVl/BHRWQEiorCKishFRWJFRWQGQAA+zkXJkHl6dYodPDjUD1ZBMg8vTrESFiB6cgZB5enQkLGoGs2DDwjzRzPGDZ3IhTPRDNWHoDxxzfGDYjm+MGz25q/+wGagPFHM8YNiOZ4wbPZmomavgHjimeMG7CKZ4w+HszUZTYk6AdwyvCsi5J5pKLKVbsDfKJlGEpY43Ylqt3/AEDfKJlGEteXdiWvLuwNI4cDGKP0WBLzdm0MaXgDzuPxhiTv8YfPB6sxEzEB5nH4wI4vB6sxEzEB5u/xgO7wenMRnHEgPPiDQgHs6Wg6ag6Wg6YB0w6YdOOmAnTDpx046cCdObwzVh6MOnN4Zqw9AXOXwmchnL4M1fAGavhM1DNXwZq+AM1GUyJVRpmr4ZzIl6AzkCV7u/6JAle7sBK93f8ASSqu7/pZXu7/AKSVV3f9AS6u7EuruxLq7sS6u7Akuru/6awxoyl1d2aQxoC5iGYhmImYgGYhmId6J3oBmHEbR240cRtAZ4gmIA9nS0HTUJ01C9NQB0xOmHTDpgHTjpydOXpwJ05tDNWHoxkG0M1YegLmr4M1fBmr4TNQDNQzV8GavhM1fAGavhnMiR3mr4ZzIl6AzkllVd2SSJXu7Asr3d/0kv3d/wBEr3diX7u/6BJVXdll1d2SXV3YlVd2Al1d2aKNGcFXd/00hjQFzF8JmIZiHegHeid6HevhMxAO9HMTOu9HEbAzxAxIB7OmoOnoZy5mCwQlzMFggNOnHTmUuZgsEJczBYJgadOOnM5czDwiQTMFggNJBvDMWHo8kEzCh6oJiwVALmoOahmL4MxfAJmr4M1fBmL4MxfAJmr4ZzGvRpmL4ZzGvQGckSvd2cQTMCQzMAO5fu7Ev3d/04gjwEMYHcuruyQVd2cQxiGPADuXV3ZpDGjCGPA2hjWAHXeid6L3onegGYid6Heh3IA40cRtHXejmNoDPEExAH0/zrQfmWh1lPV8smU9XywOfzrT/hPzrQ7yr8kyvr5A5/OtCfnWh1lPV8sZb1fLAymS0qHE+h3MhwOJ9AJPoJ1BPoJ1NgE2mxJtNizabEnU2ATaCbTYTabCbTYDtSVghk/CqDwvLoMsCZJMk6y7ky7gRyUTKOuy5Oy4HEcCRzHQ6jhOZlAJFTYRUVkI6bEiorIBFRWEVFYRUVkIqbAIqKxHRWLFRWJFRWQGeIAA+tlPV8sZT1fIynq+WTK+vlgMr6+RlvV8jKer5ZMv6+WAy3q+RlvV8sZT1fJMr6/+gZzIcMTifQ7mQ4Gc+gCfQk6mxZ9CTqbAJtNhOpsJ1NiTabAWbTYk2mwm02E2mwGqg8Ly+R2PV8hQeF5ZOz6+WA7Pr5HZ9Y7Pr5HZfkCdn1hwXHZfkOC4HEcJxHQ6jhOY6AIqKxIqKyLFRWRIqKyARUVkIqKxIqKyDpsAipsR0VixUViOisBmAAPrZT1fLGW9XyxlvV8smW9XywDlvV8sZb1fLGW9XyyZb1fLAOW9XyxlvV8sZb1fLJlvV8sDOZDgcTqHcyHA4nUAk+gnU2E6gnU2ATqbEnU2LNpsSdTYBNpsJlNhNpsSY/GwGqgp5fI7Hq/+hQeF5fI7Pr5Adj1f/Sdj1fI7Pr5HZfkB2/WTser5HZ9fI7bgcRI5jodRI5joAiorEiorIRUJFRWQCKisg6KwiorIRUVgJFRWDorB0Vg6KwGYAA+tlvV8smW9XyzCS26uL/8ATJJxdXFywPRlvV8smW9XyzCS26uLliTi6t8sDfLer5ZMt6vlmEpt1b5Yk4v2+WB3MhwMI4/GDOpSxrjyzaFw4UXCA88UfjAkcfjBnp7odIeEMYdFwgPNFH4wEUfjBnoxh0XCHdDouEB5oo/GAij8Hoxh0XCOJiXpLgDpQU8vkdj1fJlKf18sQXfLA17Hqydj+mcF3yyQY6uurA17Hq+Sdv18mcNX5fLJDd8sDuJGTi9FhVa11O01ogM3F4J3eMDbFaImK0XAGXd4Hd6NcVouBitFwBl3eMCdxritFwcxYAYlOgB6+nfgSB05JACQJAkEkAWQSQJAkAJJrDEsKLhGUk1hiWi4AvctFwidy+cIvctFwiOJaLgB3LRE7louEO5aLgOJaLgB3LRGcbXo77louDiPD0BnKLLJKEv3cBL93Ev3cS/dxL93AkHu4g93YgEPu7AQ+7naa+HEHu7Ok0BcV8GK+DFaImK+AO5fBihitFwTFfAGKOYito5iA5AxAHrkEkFkEkAJBJAkFkASQJAkCQBJJrDEtFwjKSawxLCi/wCAXuWi4RO5aLhF7louETuWi4QDuh0XCJ3LRcIdy0XCHctFwgHctFwjOPD0d9y0RxG16A4lCD2JQlgJfu5IPdyy/dyQe7gIPd2SH2WD/wBkg93YCCruztNfDiH3c7TXwBivgbXwYr4TFfAGK+DFfBivhMUAxRzEdYo5iA5BAB65AknEEeCJBHggO5AkHEEeCEEeAHcgkk4gjwEEeAHck0TWiMIIsLm8MSwouALitFwMYdFwO5aLgjiWi4Ad0Oi4GK0XA7louCNrRAMVojiPD0dYrRcHEeAHMoS//JxDFgIYgOoP/Ig93OYYsCKLADqAQe7s5hiCiA6g93Ok18MlEapoC4r4TFDFaINr4BMUMUMV8JivgDFHMR1ivhzEByAUBCSEoAiCKAEJEUASE3hKAIAAKAAOQwAMEEAAREABURAAQ1RAB0RgAQAAAwAOQAB//9k=");
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -16,13 +17,15 @@
 
 a {
   margin: 10px;
-}
+} 
 
-.login, .register, .suggestions, .composer_profile{
+.login, .register, .suggestions, .composer_profile, .list{
   border: 3px solid black;
   border-radius: 20px;
-  margin: 10px;
+  margin: 20px;
   padding: 20px;
+  background-color: #242432;
+  box-shadow: 0px 0px 5px 5px #9cc7ff;
 }
 
 .email, .password, .login_button, .work, .composer, .add_to_list_button, .userName {
@@ -50,7 +53,9 @@ a {
 
 img{
   border-radius: 25%;
+  border: 1px solid black;
   width: 300px;
+  box-shadow: 0px 0px 3px 3px #9cc7ff;
 }
 
 .work_and_name_and_img{
@@ -77,17 +82,23 @@ li {
   display: flex;
   justify-content: space-around;
   margin: 10px;
-  border-top: 1px dashed rgb(162, 48, 162);
+  border-top: 2px dotted rgb(162, 48, 162);
   padding-top: 10px;
+}
+
+.carousel {
+  width: 67%;
+  margin: auto;
+
 }
 
 a {
   font-weight: 500;
-  color: #b5b9f8;
+  color: #9cc7ff;
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: #006eff;
 }
 
 body {
@@ -114,6 +125,7 @@ button {
   cursor: pointer;
   transition: border-color .5s;
   margin: 3px;
+  color: white;
 }
 button:hover {
   border-color: #00ff00;
@@ -121,17 +133,4 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #0000ff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
 }

@@ -10,11 +10,16 @@ export function ListPage() {
     const token=localStorage.token
     const [title, setTitle] = useState("")
     const [composer, setComposer] = useState("")
-    const [details, setDetails] = useState("")
     const [id, setId] = useState()
     const navigate = useNavigate()
+    // const [userName, setUserName] = useState("")
 
     api.defaults.headers.common["Authorization"] = `Token ${token}`;
+
+    // !!! THE CODE BELOW BREAKS THE APP DO! NOT! USE! !!!
+    // useEffect(() =>{ 
+    //     setUserName(user.name)
+    // },[user])
 
     function gotoDetails(composer){
         console.log(composer)
@@ -46,12 +51,18 @@ export function ListPage() {
         .then((response)=>{
             setList(response.data)
         })
-    },[token, composer, id])
+    },[token, composer, id, user])
+
+    let border = ""
+    for(let i=0;i<4;i++){
+        border = border.concat(" <> ",String.fromCharCode(parseInt("2669",16), " "))
+    }
+    border = border.concat(" <>")
 
     if(list.listings){
         return (
             <div className="list">
-                <h1>Hi {user}!</h1>
+                <h1>Hi {user.name ? user.name : user}!</h1>
                 <h2 className="page_title">Current Listings</h2>
                 <ul>
                     <div className="listing">
@@ -62,10 +73,10 @@ export function ListPage() {
                         <li>LOSE IT</li>
                     </div>
                     <div>
-                        <li>{"<><><><><><><><><><>"}</li>
+                        <li>{border}</li>
                     </div>
                     {list.listings.map((item, index) => (
-                        <div key={index} className="listing">
+                        <div key={item.id} className="listing">
                             <li>{item.entry["date added"]}</li>
                             <li>{item.entry.work}</li>
                             <li id={`composer${index}`}>{item.entry.composer}</li>

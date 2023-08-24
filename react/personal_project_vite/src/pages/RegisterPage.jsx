@@ -19,16 +19,15 @@ export const RegisterPage = () => {
       email:email,
       password: password,
     });
-    let user = response.data.email;
     console.log(response.data)
     let token = response.data.token;
     localStorage.setItem("token", token);
     api.defaults.headers.common["Authorization"] = `Token ${token}`;
-    setUser(user);
+    setUser(response.data);
     setEmail("")
     setPassword("")
     setUserName("")
-    navigate("/");
+    navigate("/list/");
   };
 
     return (

@@ -11,27 +11,29 @@ export const LoginPage = () => {
 
     const loginHandler = async (e) => {
         e.preventDefault();
-        let response = await api.post("listeners/login/", {
+        let response = await api.post("/listeners/login/", {
             email: email,
             password: password,
         });
         let token = response.data.token;
+        console.log(token)
         let user = response.data.listener;
         localStorage.setItem("token", token);
         localStorage.setItem("listener", user)
         api.defaults.headers.common["Authorization"] = `Token ${token}`;
         setUser(user)
+        console.log(user)
         setEmail("")
         setPassword("")
         if(token){
-            navigate("list/")
+            navigate("/list/")
         }
     }
 
   return (
     <div className="login">
         <h2 className="page_title">WELCOME TO MUSIC + HISTORY!</h2>
-        <h3>It's not music history, it's music + history</h3>
+        <h2>It's not music history, it's music + history</h2>
         <h1>Log Yourself In!</h1>
         <input className="email" placeholder="email"
             type="text"

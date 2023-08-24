@@ -1,19 +1,17 @@
-import { useState } from "react";
+import { useState, useEffect, useContext } from "react";
 import "./App.css";
 import { Link, Outlet, useNavigate } from "react-router-dom";
 import { createContext } from "react";
 import { api } from "./utilities";
 
 export const userContext = createContext();
-  const token = localStorage.token
-  api.defaults.headers.common["Authorization"] = `Token ${token}`;
 
   function App() {
-    const [user, setUser] = useState(null);
+    const [user, setUser] = useState();
     const navigate = useNavigate()
 
     const logOut = async () => {
-      let response = await api.post("listeners/logout/", {headers: {"Authorization": `token ${token}`}}) 
+      let response = await api.post("listeners/logout/") 
       if (response.status === 204){
         localStorage.removeItem("token")
         localStorage.removeItem("listener")
@@ -22,6 +20,24 @@ export const userContext = createContext();
         navigate("/")
       }
     }
+
+    useEffect(() => {
+      const whoAmI = async () => {
+        let token = localStorage.getItem("token")
+        if(token){
+          api.defaults.headers.common["Authorization"] = `Token ${token}`
+          let response = await api.get("listeners/info/")
+          if(response.data.email){
+            setUser(response.data)
+            navigate("list/", {user: response.data})
+          }
+        }
+        else{
+          navigate("/")
+        }
+      };
+      whoAmI()
+    }, []);
 
   return (
     <div id="app">
